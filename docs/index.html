@@ -9,7 +9,14 @@
     </head>
     <body>
         <div class="titleBox" id="main">
+            <script>
+                function scrollToContent(){
+                    let content = document.querySelector("#content");
+                    content.scrollIntoView();
+                }
+            </script>
             <p id="websiteTitle">Reducing Your Carbon Footprint</p>
+            <button id="contentScroller" type="button" onclick="scrollToContent()">&dArr;</button>
         </div>
         <button id="sidebarExpander" type="button" onclick="openSidebar()">&#9776;</button>
         <script>
@@ -32,6 +39,7 @@
             <a>Tips & Tricks</a>
         </div>
         <div id="content">
+            <p id="contentTitle">Mission</p>
             <p id="missionStatement">The purpose of this website is to help humanity lower its carbon footprint emmisions.
                 Through the use of tips & tricks that we will privide the user, the user will be better educated as how to
                 lower their carbon footprint effectively 

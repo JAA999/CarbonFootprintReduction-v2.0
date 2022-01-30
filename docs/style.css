@@ -5,11 +5,8 @@ html, body{
     scroll-behavior: smooth;
 }
 
+/* Media Query for Mobile Devices - Not Working
 @media (max-width: 480px) {
-
-    body{
-        background-color: #20741F;
-    }
 
     #sidebar{
         height: 100%;
@@ -74,6 +71,7 @@ html, body{
     }
 
 }
+*/
 
 #sidebarExpander{
     color: #58C063;
@@ -95,7 +93,7 @@ html, body{
     top: 0;
     left: 0;
     overflow-x: hidden;
-    border-right: 5px solid inset #20741F;
+    border-right: 5px inset #20741F;
     background-color: rgb(56, 157, 78);
     transition: 1s;
 }
@@ -118,63 +116,19 @@ html, body{
 #sidebarCollapser{
     margin: 10px 0px 0px 190px;
     font-size: 50px;
+    color: white;
     background-color: transparent;
     border: 0;
 }
 
-#main,
-#content{
-    transition: margin-left 1s;
-    padding: 20px;
-}
-
-.titleBox{
-    height: 100%;
+#footer{
+    top: 10%;
+    position: relative;
+    text-align: center;
     background-color: #544F4F;
-    /*Set Background Image*/
-}
-
-#websiteTitle{
-    font-size: 4rem;
-    text-align: center;
-    position: relative;
-    top: 45%;
+    margin: 0 auto;
     color: white;
-    margin: 0 auto;
-    color: aqua;
-}
-
-#contentScroller{
-    border: 0;
-    background-color: transparent;
-    color: white;
-    font-size: 3.5rem;
-    float: left;
-    position: relative;
-    top: 60%;
-    margin: 0 50%;
-}
-
-#content{
-    height: 100%;
-    transition: .5s;
-}
-
-#contentTitle{
-    font-size: 4rem;
     font-family: Lato;
-    text-align: center;
-    margin: 0 auto;
-    color: black;
-    position: relative;
-    top: 20%;
-}
-
-#missionStatement{
-    font-size: 1.5rem;
-    position: relative;
-    top: 35%;
-    font-family: Lato;
-    margin: 0 auto;
-    text-align: center;
+    padding: 40px;
+    transition: .5s; 
 }

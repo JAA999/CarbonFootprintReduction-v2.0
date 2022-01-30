@@ -3,82 +3,12 @@
     <head>
         <title>Carbon Footprint Reduction</title>
         <link href="./style.css" rel="stylesheet">
+        <link href="./home.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     </head>
     <body>
-        <style>
-            @media (max-width: 480px) {
-
-            body{
-                background-color: #20741F;
-            }
-
-            #sidebar{
-                height: 100%;
-                width: 0;
-                z-index: 1;
-                position: fixed;
-                top: 0;
-                left: 0;
-                overflow-x: hidden;
-                border-right: 5px inset #20741F;
-                background-color: rgb(56, 157, 78);
-                transition: 1s;
-            }
-
-            #sidebar a{
-                padding: 8px 30px 20px 32px;
-                font-size: 1.5rem;
-                font-family: Lato;
-                text-align: right;
-                text-decoration: none;
-                color: white;
-                display: block;
-                transition: .3s;
-            }
-
-            #sidebar a:hover{
-                background-color: #58C063;
-            }
-
-            #sidebarCollapser{
-                margin: 10px 0px 0px 190px;
-                font-size: 50px;
-                background-color: transparent;
-                border: 0;
-            }
-
-            #websiteTitle{
-                position: relative;
-                top: 60%;
-                color: black;
-            }
-
-            #contentScroller{
-                position: relative;
-                float: left;
-                top: 80%;
-                color: white;
-                font-size: 5rem;
-                background-color: transparent;
-                border: 0;
-                margin: 0 50%;
-            }
-
-            #main,
-            #content{
-                transition: margin-left 1s;
-            }
-
-            #missionStatement{
-                padding-left: 50px;
-                padding-right: 50px;
-            }
-
-            }
-        </style>
         <div class="titleBox" id="main">
             <script>
                 function scrollToContent(){
@@ -104,10 +34,10 @@
         </script>
         <div id="sidebar">
             <button id="sidebarCollapser" type="button" onclick="closeSidebar()">&times;</button>
-            <a>Home</a>
-            <a>Overview</a>
-            <a>Statistics</a>
-            <a>Tips & Tricks</a>
+            <a traget="_self" href="index.html">Home</a>
+            <a target="_self" href="Overview/overview.html">Overview</a>
+            <a target="_self" href="Statistics/statistics.html">Statistics</a>
+            <a target="_self" href="Tips&Tricks/tips&tricks.html">Tips & Tricks</a>
         </div>
         <div id="content">
             <p id="contentTitle">Mission</p>
@@ -115,6 +45,11 @@
                 Through the use of tips & tricks that we will privide the user, the user will be better educated as how to
                 lower their carbon footprint effectively 
             </p>
+        </div>
+        <div id="footer">
+            <p>Regionals Area 4 Region 3 | Joseph Arteaga, Jacqueline Higareda, Jorge Benitez, Adrian Salas</p>
+            <p>Carbon Footprint Reduction | Mountain View High School</p>
+            <p>El Paso, TX | 2021 - 2022</p>
         </div>
     </body>
 </html>

@@ -1,0 +1,137 @@
+html, body{
+    background-color: #FAF9F0;
+    margin: 0 auto;
+    height: 100%;
+}
+
+@media only screen and (min-width: 1920px) {
+
+    #sidebar{
+        height: 100%;
+        width: 0;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        border-right: 5px inset #20741F;
+        background-color: rgb(56, 157, 78);
+        transition: 1s;
+    }
+    
+    #sidebar a{
+        padding: 8px 30px 20px 32px;
+        font-size: 1.5rem;
+        font-family: Lato;
+        text-align: right;
+        text-decoration: none;
+        color: white;
+        display: block;
+        transition: .3s;
+    }
+    
+    #sidebar a:hover{
+        background-color: #58C063;
+    }
+    
+    #sidebarCollapser{
+        margin: 10px 0px 0px 190px;
+        font-size: 50px;
+        background-color: transparent;
+        border: 0;
+    }
+
+    #websiteTitle{
+        position: relative;
+        top: 60%;
+    }
+
+    #main,
+    #content{
+        transition: margin-left 1s;
+    }
+
+    #missionStatement{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+#sidebarExpander{
+    color: #58C063;
+    background-color: transparent;
+    border: 0;
+    font-size: 50px;
+    float: left;
+    position: fixed;
+    margin: 0px 0px 0px 10px;
+    top: 0;
+}
+
+#sidebar{
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    border-right: 5px solid inset #20741F;
+    background-color: rgb(56, 157, 78);
+    transition: 1s;
+}
+
+#sidebar a{
+    padding: 8px 30px 20px 32px;
+    font-size: 1.5rem;
+    font-family: Lato;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: .3s;
+}
+
+#sidebar a:hover{
+    background-color: #58C063;
+}
+
+#sidebarCollapser{
+    margin: 10px 0px 0px 190px;
+    font-size: 50px;
+    background-color: transparent;
+    border: 0;
+}
+
+#main,
+#content{
+    transition: margin-left 1s;
+    padding: 20px;
+}
+
+.titleBox{
+    height: 100%;
+    background-color: #544F4F;
+    /*Set Background Image*/
+}
+
+#websiteTitle{
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+    top: 45%;
+    color: white;
+    margin: 0 auto;
+}
+
+#content{
+    height: 100%;
+}
+
+#missionStatement{
+    font-size: 1.5rem;
+    position: relative;
+    top: 50%;
+    font-family: Lato;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lanf="en">
+    <head>
+        <title>Carbon Footprint Reduction</title>
+        <link href="./style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="titleBox" id="main">
+            <p id="websiteTitle">Reducing Your Carbon Footprint</p>
+        </div>
+        <button id="sidebarExpander" type="button" onclick="openSidebar()">&#9776;</button>
+        <script>
+            function openSidebar(){
+                document.getElementById("sidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "255px";
+                document.getElementById("content").style.marginLeft = "255px";
+            }
+            function closeSidebar(){
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.getElementById("content").style.marginLeft = "0";
+            }
+        </script>
+        <div id="sidebar">
+            <button id="sidebarCollapser" type="button" onclick="closeSidebar()">&times;</button>
+            <a>Home</a>
+            <a>Overview</a>
+            <a>Statistics</a>
+            <a>Tips & Tricks</a>
+        </div>
+        <div id="content">
+            <p id="missionStatement">The purpose of this website is to help humanity lower its carbon footprint emmisions.
+                Through the use of tips & tricks that we will privide the user, the user will be better educated as how to
+                lower their carbon footprint effectively 
+            </p>
+        </div>
+    </body>
+</html>

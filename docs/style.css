@@ -45,7 +45,7 @@ html, body{
     #websiteTitle{
         position: relative;
         top: 60%;
-        color: aqua;
+        color: black;
     }
 
     #contentScroller{
@@ -137,6 +137,7 @@ html, body{
     top: 45%;
     color: white;
     margin: 0 auto;
+    color: aqua;
 }
 
 #contentScroller{

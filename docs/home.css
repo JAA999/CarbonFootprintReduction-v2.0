@@ -74,31 +74,34 @@ html, body{
 */
 
 #sidebarExpander{
-    color: #58C063;
-    background-color: transparent;
+    color: white;
+    background-color: #2F8D82;
     border: 0;
     font-size: 50px;
     float: left;
     position: fixed;
+    z-index: 3;
     margin: 0px 0px 0px 10px;
-    top: 0;
+    top: 50%;
+    transition: 1s;
 }
 
 
 #sidebar{
     height: 100%;
-    width: 0;
+    width: 80px;
     z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    border-right: 5px inset #20741F;
-    background-color: rgb(56, 157, 78);
+    border-right: 5px inset #2F8D82;
+    background-color: #2D9784;
     transition: 1s;
 }
 
 #sidebar a{
+    visibility: hidden;
     padding: 8px 30px 20px 32px;
     font-size: 1.5rem;
     font-family: Lato;
@@ -110,7 +113,7 @@ html, body{
 }
 
 #sidebar a:hover{
-    background-color: #58C063;
+    background-color: #2F8D82;
 }
 
 #sidebarCollapser{
@@ -119,18 +122,6 @@ html, body{
     color: white;
     background-color: transparent;
     border: 0;
-}
-
-#footer{
-    top: 10%;
-    position: relative;
-    text-align: center;
-    background-color: #544F4F;
-    margin: 0 auto;
-    color: white;
-    font-family: Lato;
-    padding: 40px;
-    transition: .5s; 
 }
 
 #main,
@@ -143,6 +134,7 @@ html, body{
 .titleBox{
     height: 100%;
     background-color: #544F4F;
+    margin-left: 80px;
     /*Set Background Image*/
 }
 
@@ -170,12 +162,17 @@ html, body{
     height: 100%;
     transition: .5s;
     margin: 0 auto;
+    margin-left: 80px;
 }
 
 #contentTitle{
     font-size: 5rem;
     font-family: Lato;
     text-align: center;
+    background-color: #FDD161;
+    right: 20%;
+    width: fit-content;
+    padding: 10px 100px;
     margin: 0 auto;
     color: black;
     position: relative;
@@ -183,12 +180,70 @@ html, body{
 }
 
 #missionStatement{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 20px 50px;
+    width: 500px;
+    height: 250px;
     font-size: 1.5rem;
     position: relative;
-    top: 35%;
+    border: 20px solid #FDD161;
+    right: 20%;
+    top: 30%;
     font-family: Lato;
     margin: 0 auto;
     text-align: center;
+    transition: .5s;
+}
+
+#missionStatement:hover{
+    border-width: 10px;
+    transition: .5s;
+}
+
+#slidesContainer{
+    position: relative;
+    float: right;
+    position: left;
+    margin-right: 100px;
+    z-index: 2;
+}
+
+#slidesContainer p{
+    width: 250px;
+    height: 250px;
+    border: 10px solid #FDD161;
+    border-radius: 5px;
+    margin: 20px auto;
+    transition: ease-in;
+}
+
+#slideTop{
+    opacity: 50%;
+    
+}
+
+#slideCenter{
+    
+}
+
+#slideBottom{
+    opacity: 40%;
+    
+}
+
+#slideTop,
+#slideCenter,
+#slideBottom{
+    background-size: contain;
+}
+
+#footer{
+    top: 10%;
+    position: relative;
+    text-align: center;
+    background-color: #544F4F;
+    margin: 0 auto;
+    color: white;
+    font-family: Lato;
+    padding: 40px;
+    transition: .5s; 
 }

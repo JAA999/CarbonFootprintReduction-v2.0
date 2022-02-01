@@ -74,14 +74,14 @@ html, body{
 */
 
 #sidebarExpander{
-    color: #58C063;
+    color: #2D9784;
     background-color: transparent;
     border: 0;
     font-size: 50px;
     float: left;
     position: fixed;
     margin: 0px 0px 0px 10px;
-    top: 0;
+    top: 50%;
 }
 
 
@@ -93,8 +93,8 @@ html, body{
     top: 0;
     left: 0;
     overflow-x: hidden;
-    border-right: 5px inset #20741F;
-    background-color: rgb(56, 157, 78);
+    border-right: 5px inset #2F8D82;
+    background-color: #2D9784;
     transition: 1s;
 }
 
@@ -110,7 +110,7 @@ html, body{
 }
 
 #sidebar a:hover{
-    background-color: #58C063;
+    background-color: #2F8D82;
 }
 
 #sidebarCollapser{

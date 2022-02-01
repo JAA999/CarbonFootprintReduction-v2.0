@@ -24,21 +24,77 @@
                 document.getElementById("sidebar").style.width = "250px";
                 document.getElementById("main").style.marginLeft = "255px";
                 document.getElementById("content").style.marginLeft = "255px";
+                document.getElementById("sidebarExpander").style.visibility = "hidden";
+                document.getElementById("sidebarExpander").style.marginLeft = "180px";
+                document.getElementById("homeLink").style.visibility = "visible";
+                document.getElementById("overviewLink").style.visibility = "visible";
+                document.getElementById("statisticsLink").style.visibility = "visible";
+                document.getElementById("tipsLink").style.visibility = "visible";
             }
             function closeSidebar(){
-                document.getElementById("sidebar").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";
-                document.getElementById("content").style.marginLeft = "0";
+                document.getElementById("sidebar").style.width = "80px";
+                document.getElementById("main").style.marginLeft = "80px";
+                document.getElementById("content").style.marginLeft = "80px";
+                document.getElementById("sidebarExpander").style.visibility = "visible";
+                document.getElementById("sidebarExpander").style.marginLeft = "10px";
+                document.getElementById("homeLink").style.visibility = "hidden";
+                document.getElementById("overviewLink").style.visibility = "hidden";
+                document.getElementById("statisticsLink").style.visibility = "hidden";
+                document.getElementById("tipsLink").style.visibility = "hidden";
             }
         </script>
         <div id="sidebar">
             <button id="sidebarCollapser" type="button" onclick="closeSidebar()">&times;</button>
-            <a traget="_self" href="index.html">Home</a>
-            <a target="_self" href="Overview/overview.html">Overview</a>
-            <a target="_self" href="Statistics/statistics.html">Statistics</a>
-            <a target="_self" href="Tips&Tricks/tips&tricks.html">Tips & Tricks</a>
+            <a traget="_self" id="homeLink" href="index.html">Home</a>
+            <a target="_self" id="overviewLink" href="overview.html">Overview</a>
+            <a target="_self" id="statisticsLink" href="statistics.html">Statistics</a>
+            <a target="_self" id="tipsLink" href="tips&tricks.html">Tips & Tricks</a>
         </div>
         <div id="content">
+            <section id="slidesContainer">
+                <script>
+                    setInterval(slideRotation, 3000);
+                    var current = 0;
+                    function slideRotation(){
+                        if(current == 0) {
+                            document.getElementById("slideTop").style.background = "url(assets/images/electric_car.jpg)";
+                            document.getElementById("slideTop").style.backgroundSize = "contain";
+                            document.getElementById("slideCenter").style.background = "url(assets/images/elpaso_city.jpg)";
+                            document.getElementById("slideCenter").style.backgroundSize = "contain";
+                            document.getElementById("slideBottom").style.background = "url(assets/images/fruit.jpg)";
+                            document.getElementById("slideBottom").style.backgroundSize = "contain";
+                            current = 1;
+                        }else if(current == 1) {
+                            document.getElementById("slideTop").style.background = "url(assets/images/elpaso_city.jpg)";
+                            document.getElementById("slideTop").style.backgroundSize = "contain";
+                            document.getElementById("slideCenter").style.background = "url(assets/images/fruit.jpg)";
+                            document.getElementById("slideCenter").style.backgroundSize = "contain";
+                            document.getElementById("slideBottom").style.background = "url(assets/images/icebergs.jpg)";
+                            document.getElementById("slideBottom").style.backgroundSize = "contain";
+                            current = 2;
+                        }else if(current == 2) {
+                            document.getElementById("slideTop").style.background = "url(assets/images/fruit.jpg)";
+                            document.getElementById("slideTop").style.backgroundSize = "contain";
+                            document.getElementById("slideCenter").style.background = "url(assets/images/icebergs.jpg)";
+                            document.getElementById("slideCenter").style.backgroundSize = "contain";
+                            document.getElementById("slideBottom").style.background = "url(assets/images/electric_car.jpg)";
+                            document.getElementById("slideBottom").style.backgroundSize = "contain";
+                            current = 3;
+                        } else if(current == 3) {
+                            document.getElementById("slideTop").style.background = "url(assets/images/icebergs.jpg)";
+                            document.getElementById("slideTop").style.backgroundSize = "contain";
+                            document.getElementById("slideCenter").style.background = "url(assets/images/fruit.jpg)";
+                            document.getElementById("slideCenter").style.backgroundSize = "contain";
+                            document.getElementById("slideBottom").style.background = "url(assets/images/elpaso_city)";
+                            document.getElementById("slideBottom").style.backgroundSize = "contain";
+                            current = 0;
+                        }
+                    }
+                </script>
+                <p id="slideTop"></p>
+                <p id="slideCenter"></p>
+                <p id="slideBottom"></p>
+            </section>
             <p id="contentTitle">Mission</p>
             <p id="missionStatement">The purpose of this website is to help humanity lower its carbon footprint emmisions.
                 Through the use of tips & tricks that we will privide the user, the user will be better educated as how to

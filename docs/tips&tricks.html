@@ -9,17 +9,30 @@
         <script>
             function openSidebar(){
                 document.getElementById("sidebar").style.width = "250px";
+                document.getElementById("content").style.marginLeft = "255px";
+                document.getElementById("sidebarExpander").style.visibility = "hidden";
+                document.getElementById("sidebarExpander").style.marginLeft = "180px";
+                document.getElementById("homeLink").style.visibility = "visible";
+                document.getElementById("overviewLink").style.visibility = "visible";
+                document.getElementById("statisticsLink").style.visibility = "visible";
+                document.getElementById("tipsLink").style.visibility = "visible";
             }
             function closeSidebar(){
-                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("sidebar").style.width = "80px";
+                document.getElementById("sidebarExpander").style.visibility = "visible";
+                document.getElementById("sidebarExpander").style.marginLeft = "10px";
+                document.getElementById("homeLink").style.visibility = "hidden";
+                document.getElementById("overviewLink").style.visibility = "hidden";
+                document.getElementById("statisticsLink").style.visibility = "hidden";
+                document.getElementById("tipsLink").style.visibility = "hidden";
             }
         </script>
         <div id="sidebar">
             <button id="sidebarCollapser" type="button" onclick="closeSidebar()">&times;</button>
-            <a traget="_self" href="index.html">Home</a>
-            <a target="_self" href="overview.html">Overview</a>
-            <a target="_self" href="statistics.html">Statistics</a>
-            <a target="_self" href="tips&tricks.html">Tips & Tricks</a>
+            <a traget="_self" id="homeLink" href="index.html">Home</a>
+            <a target="_self" id="overviewLink" href="overview.html">Overview</a>
+            <a target="_self" id="statisticsLink" href="statistics.html">Statistics</a>
+            <a target="_self" id="tipsLink" href="tips&tricks.html">Tips & Tricks</a>
         </div>
     </body>
 </html>

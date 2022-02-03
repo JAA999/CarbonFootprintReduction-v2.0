@@ -211,6 +211,7 @@ html, body{
     width: 250px;
     height: 250px;
     border: 10px solid #FDD161;
+    background-color: #FDD161;
     border-radius: 5px;
     margin: 20px auto;
     transition: ease-in;

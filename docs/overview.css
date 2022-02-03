@@ -1,5 +1,4 @@
 html, body{
-    background-color: #33447D;
     margin: 0 auto;
     height: 100%;
     scroll-behavior: smooth;
@@ -76,8 +75,7 @@ html, body{
 #sidebarExpander{
     color: white;
     background-color: #323837;
-    border-radius: 15%;
-    border: 2px solid white;
+    border: 0;
     font-size: 50px;
     float: left;
     position: fixed;
@@ -123,6 +121,23 @@ html, body{
     color: white;
     background-color: transparent;
     border: 0;
+}
+
+.parallax{
+    background-image: "url(assets/images/elpaso_city.jpg)";
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hotAirBallon{
+    height: 100%;
+    width: 33%;
+    background-color: #4f5353;
+    position:relative;
+    margin: 0 540px;
 }
 
 #footer{

@@ -124,6 +124,108 @@ html, body{
     border: 0;
 }
 
+/*Statistics Total*/
+#statisticsTitle{
+    position: relative;
+    top: 10%;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 4rem;
+    font-family: Lato;
+    background-color: #FDD161;
+    color: white;
+}
+
+/*Grid layout for statistics content*/
+
+#statisticsContent{
+    display: grid;
+    grid-template-areas: "techImage" "techStats"
+                         "foodImage" "foodStats"
+                         "energyImage" "energyStats"
+                         "clothingImage" "clothingStats"
+                         "transportImage" "transportStats";
+    gap: 50px;
+    grid-template-columns: 25% 60%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    top: 20%;
+    margin-left: 200px;
+}
+
+#statisticsContent img{
+    width: 300px;
+    height: 300px;
+}
+
+#techImage{
+    grid-area: "techImage";
+    border: 5px solid #33447D;
+}
+
+#techStats{grid-area: "techStats";}
+#techStats p{
+    width: 100%;
+    height: 20%;
+    color: white;
+    background-color: #33447D;
+}
+
+#foodImage{
+    grid-area: "foodImage";
+    border: 5px solid #FDD161;
+}
+
+#foodStats{grid-area: "foodStats";}
+#foodStats p{
+    width: 100%;
+    height: 20%;
+    color: black;
+    background-color: #FDD161;
+}
+
+#energyImage{
+    grid-area: "energyImage";
+    border: 5px solid #2D9784;
+}
+
+#energyStats{grid-area: "energyStats";}
+#energyStats p{
+    width: 100%;
+    height: 20%;
+    color: white;
+    background-color: #2D9784;
+}
+
+#clothingImage{
+    grid-area: "clothingImage";
+    border: 5px solid #FDD161;
+}
+
+#clothingStats{grid-area: "clothingStats";}
+#clothingStats p{
+    width: 100%;
+    height: 20%;
+    color: black;
+    background-color: #FDD161;
+}
+
+#transportImage{
+    grid-area: "transportImage";
+    border: 5px solid #33447D;
+}
+
+#transportStats{grid-area: "clothingStats";}
+#transportStats p{
+    width: 100%;
+    height: 20%;
+    color: white;
+    background-color: #33447D;
+}
+
+/*Footer formatting*/
+
 #footer{
     top: 10%;
     position: relative;

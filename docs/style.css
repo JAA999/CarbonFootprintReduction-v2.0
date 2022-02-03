@@ -5,7 +5,6 @@ html, body{
 }
 
 #sidebarExpander{
-    color: white;
     background-color: transparent;
     border: 0;
     font-size: 50px;
@@ -26,8 +25,6 @@ html, body{
     top: 0;
     left: 0;
     overflow-x: hidden;
-    border-right: 5px inset #2F8D82;
-    background-color: #2D9784;
     transition: 1s;
 }
 
@@ -38,24 +35,18 @@ html, body{
     font-family: Lato;
     text-align: right;
     text-decoration: none;
-    color: white;
     display: block;
     transition: .3s;
-}
-
-#sidebar a:hover{
-    background-color: #2F8D82;
 }
 
 #sidebarCollapser{
     margin: 10px 0px 0px 190px;
     font-size: 50px;
-    color: white;
     background-color: transparent;
     border: 0;
 }
 
-#footer{
+/*#footer{
     top: 10%;
     position: relative;
     text-align: center;
@@ -65,4 +56,4 @@ html, body{
     font-family: Lato;
     padding: 40px;
     transition: .5s; 
-}
+}*/

@@ -1,128 +1,16 @@
-html, body{
-    background-color: #FAF9F0;
-    margin: 0 auto;
-    height: 100%;
-    scroll-behavior: smooth;
-}
+/*Sidebar and Background Color Adjustments*/
 
-/* Media Query for Mobile Devices - Not Working
-@media (max-width: 480px) {
+html, body{background-color: #FAF9F0;}
 
-    #sidebar{
-        height: 100%;
-        width: 0;
-        z-index: 1;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        border-right: 5px inset #20741F;
-        background-color: rgb(56, 157, 78);
-        transition: 1s;
-    }
-    
-    #sidebar a{
-        padding: 8px 30px 20px 32px;
-        font-size: 1.5rem;
-        font-family: Lato;
-        text-align: right;
-        text-decoration: none;
-        color: white;
-        display: block;
-        transition: .3s;
-    }
-    
-    #sidebar a:hover{
-        background-color: #58C063;
-    }
-    
-    #sidebarCollapser{
-        margin: 10px 0px 0px 190px;
-        font-size: 50px;
-        background-color: transparent;
-        border: 0;
-    }
+#sidebarExpander{color: white; background-color: #2F8D82;}
 
-    #websiteTitle{
-        position: relative;
-        top: 60%;
-        color: black;
-    }
+#sidebar{border-right: 5px inset #2F8D82; background-color: #2D9784;}
 
-    #contentScroller{
-        position: relative;
-        float: left;
-        top: 80%;
-        color: white;
-        font-size: 5rem;
-        background-color: transparent;
-        border: 0;
-        margin: 0 50%;
-    }
+#sidebar a{color: white;}
 
-    #main,
-    #content{
-        transition: margin-left 1s;
-    }
+#sidebar a:hover{background-color: #2F8D82;}
 
-    #missionStatement{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-}
-*/
-
-#sidebarExpander{
-    color: white;
-    background-color: #2F8D82;
-    border: 0;
-    font-size: 50px;
-    float: left;
-    position: fixed;
-    z-index: 3;
-    margin: 0px 0px 0px 10px;
-    top: 50%;
-    transition: 1s;
-}
-
-
-#sidebar{
-    height: 100%;
-    width: 80px;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    border-right: 5px inset #2F8D82;
-    background-color: #2D9784;
-    transition: 1s;
-}
-
-#sidebar a{
-    visibility: hidden;
-    padding: 8px 30px 20px 32px;
-    font-size: 1.5rem;
-    font-family: Lato;
-    text-align: right;
-    text-decoration: none;
-    color: white;
-    display: block;
-    transition: .3s;
-}
-
-#sidebar a:hover{
-    background-color: #2F8D82;
-}
-
-#sidebarCollapser{
-    margin: 10px 0px 0px 190px;
-    font-size: 50px;
-    color: white;
-    background-color: transparent;
-    border: 0;
-}
+#sidebarCollapser{color: white;}
 
 #main,
 #content,

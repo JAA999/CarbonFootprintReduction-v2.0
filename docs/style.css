@@ -6,6 +6,23 @@ html, body{
     scroll-behavior: smooth;
 }
 
+.sidebar{
+    float: left;
+    position: fixed;
+    margin: 0 0 0 15px;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+}
+
+.house{top: 9%;}
+
+.bulb{top: 31%;}
+
+.world{top: 17%;}
+
+.graph{top: 24%;}
+
 #sidebarExpander{
     background-color: transparent;
     border: 0;

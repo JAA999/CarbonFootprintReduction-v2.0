@@ -12,6 +12,36 @@ html, body{background-color: #FAF9F0;}
 
 #sidebarCollapser{color: white;}
 
+i{
+    position: fixed;
+    top: 300px;
+    left: 450px;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: rgb(211, 210, 210);
+}
+
+i{
+    animation:
+        x 10s linear infinite alternate,
+        y 10s infinite cubic-bezier(0, 533.11, 1, 533.11);
+}
+
+@keyframes x{
+    to {
+        left: 1050px;
+        background-color: rgb(255, 145, 0);
+    }
+}
+
+@keyframes y{
+    to {
+        top: 299.5px;
+    }
+}
+
 #main,
 #content,
 #footer{
@@ -21,7 +51,8 @@ html, body{background-color: #FAF9F0;}
 
 .titleBox{
     height: 100%;
-    background-color: #544F4F;
+    background-image: url(assets/images/nightMountains.jpg);
+    background-size: cover;
     margin-left: 80px;
     /*Set Background Image*/
 }
@@ -101,7 +132,7 @@ html, body{background-color: #FAF9F0;}
     border: 10px solid #FDD161;
     background-color: #FDD161;
     border-radius: 5px;
-    margin: 20px auto;
+    margin: 10px auto;
     transition: ease-in;
 }
 

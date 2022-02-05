@@ -6,8 +6,9 @@ html, body{background-color: #FDD161;}
 
 #sidebar{border-right: 5px inset #2F8D82; background-color: #33447D;}
 
-#sidebar a{color: white;}
+#sidebar a{color: black;}
 
 #sidebar a:hover{background-color: #2F8D82;}
 
 #sidebarCollapser{color: white;}
+

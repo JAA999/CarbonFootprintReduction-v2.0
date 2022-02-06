@@ -80,67 +80,23 @@ html, body{
 /* Media Query for Mobile Devices - Not Working*/
 
 @media screen and (max-width: 1920px) {
-
-    #sidebar{
-        height: 100%;
-        width: 0;
-        z-index: 1;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        border-right: 5px inset #20741F;
-        background-color: rgb(56, 157, 78);
-        transition: 1s;
-    }
     
-    #sidebar a{
-        padding: 8px 30px 20px 32px;
-        font-size: 1.5rem;
-        font-family: Lato;
-        text-align: right;
-        text-decoration: none;
-        color: white;
-        display: block;
-        transition: .3s;
-    }
-    
-    #sidebar a:hover{
-        background-color: #58C063;
-    }
-    
-    #sidebarCollapser{
-        margin: 10px 0px 0px 190px;
-        font-size: 50px;
-        background-color: transparent;
-        border: 0;
+    .world{top: 37%;}
+
+    .graph{top: 50%;}
+
+    .bulb{top: 55.5%;}
+
+    #sidebarExpander,
+    #sidebarCollapser{top: 43%;}
+
+    #statisticsContent p{
+        font-size: 1.2rem;
     }
 
-    #websiteTitle{
-        position: relative;
-        top: 60%;
-        color: black;
-    }
+    #slidesContainer{top: 13%;}
 
-    #contentScroller{
-        position: relative;
-        float: left;
-        top: 80%;
-        color: white;
-        font-size: 5rem;
-        background-color: transparent;
-        border: 0;
-        margin: 0 50%;
-    }
-
-    #main,
-    #content{
-        transition: margin-left 1s;
-    }
-
-    #missionStatement{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+    #contentTitle{font-size: 7rem;}
+    #missionStatement{font-size: 2rem; width:700px; height: 300px;}
 
 }

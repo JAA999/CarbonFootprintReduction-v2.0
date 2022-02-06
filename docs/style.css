@@ -79,7 +79,7 @@ html, body{
 
 /* Media Query for Mobile Devices - Not Working*/
 
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
     
     .world{top: 37%;}
 

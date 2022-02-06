@@ -6,31 +6,13 @@
         <link href="./style.css" rel="stylesheet">
     </head>
     <body>
+        <script src="main.js"></script>
+        <img class="sidebar" id="logo" src="assets/images/logo.png"/>
         <a href="index.html"><img class="sidebar house" src="assets/images/sidebar/white/houseWhite.png"></a>
         <a href="overview.html"><img class="sidebar world" src="assets/images/sidebar/white/worldWhite.png"></a>
         <a href="statistics.html"><img class="sidebar graph" src="assets/images/sidebar/white/graphWhite.png"></a>
         <a href="tips&tricks.html"><img class="sidebar bulb" src="assets/images/sidebar/white/bulbWhite.png"></a>
         <button id="sidebarExpander" type="button" onclick="openSidebar()">&#9776;</button>
-        <script>
-            function openSidebar(){
-                document.getElementById("sidebar").style.width = "250px";
-                document.getElementById("sidebarExpander").style.visibility = "hidden";
-                document.getElementById("sidebarExpander").style.marginLeft = "180px";
-                document.getElementById("homeLink").style.visibility = "visible";
-                document.getElementById("overviewLink").style.visibility = "visible";
-                document.getElementById("statisticsLink").style.visibility = "visible";
-                document.getElementById("tipsLink").style.visibility = "visible";
-            }
-            function closeSidebar(){
-                document.getElementById("sidebar").style.width = "80px";
-                document.getElementById("sidebarExpander").style.visibility = "visible";
-                document.getElementById("sidebarExpander").style.marginLeft = "10px";
-                document.getElementById("homeLink").style.visibility = "hidden";
-                document.getElementById("overviewLink").style.visibility = "hidden";
-                document.getElementById("statisticsLink").style.visibility = "hidden";
-                document.getElementById("tipsLink").style.visibility = "hidden";
-            }
-        </script>
         <div id="sidebar">
             <button id="sidebarCollapser" type="button" onclick="closeSidebar()">&times;</button>
             <a traget="_self" id="homeLink" href="index.html">Home</a>
@@ -42,33 +24,33 @@
         <div id="statisticsContent">
             <img id="techImage"/>
             <div id="techStats">
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>According to the BBC at least 4.1 billion people use the internet daily which contributes 3.7% of our total carbon footprint for our Earth (1.6 Billon tons).</p>
+                <p>Many data center companies use fossil fuels in order to keep their own building running due to the increasing amount of internet users and data that needs to be stored daily (BBC).</p>
+                <p>For Non-Fungible Tokens (NFTs) each digital transaction has an average carbon footprint between 33.4kg and 48kg (Earth.org).</p>
             </div>
             <img id="foodImage"/>
             <div id="foodStats">
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>Anywhere from 10-30% of a household's carbon footprint comes from the food we eat.</p>
+                <p>Meats make up approximately 57% of greehouse gas emissions by food type.</p>
+                <p>Fruits, grains, and vegetables cotribute to 6.3% of our food emissions combined.</p>
             </div>
             <img id="energyImage"/>
             <div id="energyStats">
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>Large appliances like refrigerators emit an annual avergae of 672lbs of carbon dioxide.</p>
+                <p>Power plants release an average of .889lbs of carbon dioxide per kWh.</p>
+                <p>Other means of energy production, such as hydroelectric power, release no carbon dioxide, and during production they release less carbon dioxide than power plants.</p>
             </div>
             <img id="clothingImage"/>
             <div id="clothingStats">
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>Based on a research study provided by the United Nations Environment Program, it takes approximately 33.4kg of carbon to produce a pair of jeans from production to the delivery of the store where it shall be sold (WorldBank.org).</p>
+                <p>The apparent rise in "fast fashion," where trends change at an instant, contributes nearly 1.2 billion tons carbon dioxide toward our planet each year due to the execsive amounts of clothing being discarded by companies in order to keep up with the demands of consumers (TheGroupAgainstSmogandPollution.org).</p>
+                <p>Due to the demands of the fashion industry that is placed on companies, many resources are used in order to achieve easy and fast results. However their efforts contribute 20% of the waste water that is currently in our oceans. It is also fueled by the decision of placing future factories into countries that lack proper environmental laws (Princeton.edu). </p>
             </div>
             <img id="transportImage"/>
             <div id="transportStats">
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>According to the University of Michigan, gasoline releases approximately 19.6lbs of CO2 per gallon.</p>
+                <p>Averaging 0.74lbs of carbon dioxide per mile driven; driving can greatly contribute to your carbon footprint.</p>
+                <p>At an average price of $3.26/gal, the average American spends anywhere from $1.4k to $3k on gasoline per year.</p>
             </div>
         </div>
     </body>

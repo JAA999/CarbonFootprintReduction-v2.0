@@ -47,8 +47,15 @@ html, body{background-color: #343539;}
     height: 300px;
 }
 
+#statisticsContent p{
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
 #techImage{
     grid-area: "techImage";
+    background-color: #33447D;
     border: 5px solid #33447D;
 }
 
@@ -62,6 +69,7 @@ html, body{background-color: #343539;}
 
 #foodImage{
     grid-area: "foodImage";
+    background-color: #FDD161;
     border: 5px solid #FDD161;
 }
 
@@ -75,6 +83,7 @@ html, body{background-color: #343539;}
 
 #energyImage{
     grid-area: "energyImage";
+    background-color: #2D9784;
     border: 5px solid #2D9784;
 }
 
@@ -88,6 +97,7 @@ html, body{background-color: #343539;}
 
 #clothingImage{
     grid-area: "clothingImage";
+    background-color: #FDD161;
     border: 5px solid #FDD161;
 }
 
@@ -101,6 +111,7 @@ html, body{background-color: #343539;}
 
 #transportImage{
     grid-area: "transportImage";
+    background-color: #33447D;
     border: 5px solid #33447D;
 }
 

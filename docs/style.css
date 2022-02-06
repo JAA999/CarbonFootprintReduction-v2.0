@@ -4,6 +4,7 @@ html, body{
     margin: 0 auto;
     height: 100%;
     scroll-behavior: smooth;
+    font-family: Lato;
 }
 
 .sidebar{
@@ -15,26 +16,38 @@ html, body{
     height: 50px;
 }
 
-.house{top: 35%;}
+#logo{
+    top: 15%;
+    margin-right: 17px;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+}
 
-.bulb{top: 67%;}
+.house{top: 31%;}
 
-.world{top: 43%;}
+.bulb{top: 62%;}
 
-.graph{top: 60%;}
+.world{top: 38.5%;}
 
-#sidebarExpander{
+.graph{top: 55%;}
+
+#sidebarExpander,
+#sidebarCollapser{
     background-color: transparent;
     border: 0;
     font-size: 50px;
     float: left;
     position: fixed;
     z-index: 3;
-    margin: 0px 0px 0px 10px;
-    top: 50%;
-    transition: 1s;
+    margin: 0px 0px 0px 13px;
+    top: 45%;
+    transition-delay: 1s;
 }
 
+#sidebarExpander{transition: 1s;}
+
+#sidebarCollapser{visibility: hidden; transition: 0.3s;}
 
 #sidebar{
     height: 100%;
@@ -53,7 +66,7 @@ html, body{
 
 #sidebar a{
     position: relative;
-    top: 26%;
+    top: 31%;
     visibility: hidden;
     padding: 8px 30px 20px 32px;
     font-size: 1.5rem;
@@ -64,26 +77,12 @@ html, body{
     transition: .3s;
 }
 
-#sidebarCollapser{
+/*#sidebarCollapser{
     margin: 10px 0px 0px 190px;
     font-size: 50px;
     background-color: transparent;
     border: 0;
-}
-
-/*
-#footer{
-    top: 10%;
-    position: relative;
-    text-align: center;
-    background-color: #544F4F;
-    margin: 0 auto;
-    color: white;
-    font-family: Lato;
-    padding: 40px;
-    transition: .5s; 
-}
-*/
+}*/
 
 /* Media Query for Mobile Devices - Not Working
 

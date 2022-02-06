@@ -54,14 +54,13 @@ i{
     background-image: url(assets/images/nightMountains.jpg);
     background-size: cover;
     margin-left: 80px;
-    /*Set Background Image*/
 }
 
 #websiteTitle{
     font-size: 6rem;
     text-align: center;
     position: relative;
-    top: 38%;
+    top: 35%;
     color: white;
     margin: 0 auto;
 }
@@ -73,7 +72,7 @@ i{
     font-size: 5rem;
     float: left;
     position: relative;
-    top: 55%;
+    top: 50%;
     margin: 0 50%;
 }
 

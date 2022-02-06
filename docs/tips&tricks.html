@@ -6,37 +6,22 @@
         <link href="./style.css" rel="stylesheet">
     </head>
     <body>
+        <script src="main.js"></script>
+        <img class="sidebar" id="logo" src="assets/images/logo.png"/>
         <a href="index.html"><img class="sidebar house" src="assets/images/sidebar/white/houseWhite.png"></a>
         <a href="overview.html"><img class="sidebar world" src="assets/images/sidebar/white/worldWhite.png"></a>
         <a href="statistics.html"><img class="sidebar graph" src="assets/images/sidebar/white/graphWhite.png"></a>
         <a href="tips&tricks.html"><img class="sidebar bulb" src="assets/images/sidebar/white/bulbWhite.png"></a>
         <button id="sidebarExpander" type="button" onclick="openSidebar()">&#9776;</button>
-        <script>
-            function openSidebar(){
-                document.getElementById("sidebar").style.width = "250px";
-                document.getElementById("sidebarExpander").style.visibility = "hidden";
-                document.getElementById("sidebarExpander").style.marginLeft = "180px";
-                document.getElementById("homeLink").style.visibility = "visible";
-                document.getElementById("overviewLink").style.visibility = "visible";
-                document.getElementById("statisticsLink").style.visibility = "visible";
-                document.getElementById("tipsLink").style.visibility = "visible";
-            }
-            function closeSidebar(){
-                document.getElementById("sidebar").style.width = "80px";
-                document.getElementById("sidebarExpander").style.visibility = "visible";
-                document.getElementById("sidebarExpander").style.marginLeft = "10px";
-                document.getElementById("homeLink").style.visibility = "hidden";
-                document.getElementById("overviewLink").style.visibility = "hidden";
-                document.getElementById("statisticsLink").style.visibility = "hidden";
-                document.getElementById("tipsLink").style.visibility = "hidden";
-            }
-        </script>
         <div id="sidebar">
             <button id="sidebarCollapser" type="button" onclick="closeSidebar()">&times;</button>
             <a traget="_self" id="homeLink" href="index.html">Home</a>
             <a target="_self" id="overviewLink" href="overview.html">Overview</a>
             <a target="_self" id="statisticsLink" href="statistics.html">Statistics</a>
             <a target="_self" id="tipsLink" href="tips&tricks.html">Tips & Tricks</a>
+        </div>
+        <div id="slides">
+            
         </div>
     </body>
 </html>

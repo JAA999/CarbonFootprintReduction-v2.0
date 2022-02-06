@@ -2,7 +2,7 @@
 
 html, body{background-color: #33447D;}
 
-#sidebarExpander{color: white; background-color: #323837;}
+#sidebarExpander{color: white; background-color: transparent;}
 
 #sidebar{border-right: 5px inset #4f5353; background-color: #323837;}
 

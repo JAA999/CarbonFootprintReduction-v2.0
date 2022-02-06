@@ -77,16 +77,9 @@ html, body{
     transition: .3s;
 }
 
-/*#sidebarCollapser{
-    margin: 10px 0px 0px 190px;
-    font-size: 50px;
-    background-color: transparent;
-    border: 0;
-}*/
+/* Media Query for Mobile Devices - Not Working*/
 
-/* Media Query for Mobile Devices - Not Working
-
-@media (max-width: 480px) {
+@media screen and (max-width: 1920px) {
 
     #sidebar{
         height: 100%;
@@ -151,4 +144,3 @@ html, body{
     }
 
 }
-*/

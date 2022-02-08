@@ -1,6 +1,6 @@
 /*Sidebar and Background Color Adjustments*/
 
-html, body{background-color: #FAF9F0;}
+html, body{background-color: #FAF9F0; font-family: 'Oswald', sans-serif;}
 
 #sidebarExpander{color: white; background-color: #2F8D82;}
 
@@ -113,7 +113,7 @@ i{
 }
 
 #missionStatement:hover{
-    border: 11px solid #FDD161;
+    border: 20px solid #FDD161;
     transition: .5s;
 }
 

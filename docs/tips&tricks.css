@@ -1,6 +1,6 @@
 /*Sidebar and Background Color Adjustments*/
 
-html, body{background-color: transparent; height: 100%;}
+html, body{background-color: transparent; height: 100%; font-family: 'Oswald', sans-serif;}
 
 #sidebarExpander{color: white; background-color: transparent;}
 

@@ -113,7 +113,7 @@ i{
 }
 
 #missionStatement:hover{
-    border: 20px;
+    border: 20px solid #FDD161;
     transition: .5s;
 }
 

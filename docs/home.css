@@ -103,7 +103,7 @@ i{
     height: 250px;
     font-size: 1.5rem;
     position: relative;
-    border: 20px solid #FDD161;
+    border: 10px solid #FDD161;
     right: 20%;
     top: 30%;
     font-family: Lato;
@@ -113,7 +113,7 @@ i{
 }
 
 #missionStatement:hover{
-    border-width: 10px;
+    border-width: 20px;
     transition: .5s;
 }
 

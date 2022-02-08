@@ -20,7 +20,7 @@ html, body{background-color: #85a8e7;}
     margin-top: 60px;
 }
 
-p{position: absolute; height: wrap; color: black; font-size: 1.1rem;}
+p{position: absolute; height: wrap; color: white; font-size: 1.1rem; font-family: 'Lato', sans-serif; font-weight: 100;}
 
 #cloud1{top: 21%; left: 100px; width: 200px;}
 #cloud2{top: 22%; left: 85%; width: 200px;}

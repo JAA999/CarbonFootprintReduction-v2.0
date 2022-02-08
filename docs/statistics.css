@@ -14,13 +14,13 @@ html, body{background-color: #343539;}
 
 /*Statistics Total*/
 #statisticsTitle{
+    font-family: 'Oswald', sans-serif;
     position: relative;
     top: 10%;
     text-align: center;
     margin: 0 auto;
     width: 50%;
     font-size: 4rem;
-    font-family: Lato;
     background-color: #FDD161;
     color: white;
 }
@@ -51,6 +51,8 @@ html, body{background-color: #343539;}
 }
 
 #statisticsContent p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
     padding: 20px 20px;
     font-size: 1rem;
     text-align: center;

@@ -1,6 +1,6 @@
 /*Sidebar and Background Color Adjustments*/
 
-html, body{background-color: #FAF9F0; font-family: 'Oswald', sans-serif;}
+html, body{background-color: #FAF9F0;}
 
 #sidebarExpander{color: white; background-color: #2F8D82;}
 
@@ -57,6 +57,7 @@ i{
 }
 
 #websiteTitle{
+    font-family: 'Oswald', sans-serif;
     font-size: 6rem;
     text-align: center;
     position: relative;
@@ -85,7 +86,8 @@ i{
 
 #contentTitle{
     font-size: 5rem;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     text-align: center;
     background-color: #FDD161;
     right: 20%;
@@ -99,6 +101,8 @@ i{
 
 #missionStatement{
     padding: 20px 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
     width: 500px;
     height: 250px;
     font-size: 1.5rem;
@@ -106,7 +110,6 @@ i{
     border: 10px solid #FDD161;
     right: 20%;
     top: 30%;
-    font-family: Lato;
     margin: 0 auto;
     text-align: center;
     transition: .5s;
@@ -162,7 +165,6 @@ i{
     background-color: #544F4F;
     margin: 0 auto;
     color: white;
-    font-family: Lato;
     padding: 40px;
     transition: .5s; 
 }

@@ -43,12 +43,15 @@ html, body{background-color: #343539;}
 }
 
 #statisticsContent img{
+    position: relative;
+    justify-content: center;
+    align-self: center;
     width: 300px;
     height: 300px;
 }
 
 #statisticsContent p{
-    padding: 10px;
+    padding: 20px 20px;
     font-size: 1rem;
     text-align: center;
 }
@@ -59,10 +62,21 @@ html, body{background-color: #343539;}
     border: 5px solid #33447D;
 }
 
+#foodStats p,
+#energyStats p,
+#transportStats p,
+#techStats p,
+#clothingStats p{
+    font-size: 1.2rem;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+}
+
 #techStats{grid-area: "techStats";}
 #techStats p{
     width: 100%;
-    height: 20%;
+    height: wrap;
     color: white;
     background-color: #33447D;
 }
@@ -76,7 +90,7 @@ html, body{background-color: #343539;}
 #foodStats{grid-area: "foodStats";}
 #foodStats p{
     width: 100%;
-    height: 20%;
+    height: wrap;
     color: black;
     background-color: #FDD161;
 }
@@ -90,7 +104,7 @@ html, body{background-color: #343539;}
 #energyStats{grid-area: "energyStats";}
 #energyStats p{
     width: 100%;
-    height: 20%;
+    height: wrap;
     color: white;
     background-color: #2D9784;
 }
@@ -104,7 +118,7 @@ html, body{background-color: #343539;}
 #clothingStats{grid-area: "clothingStats";}
 #clothingStats p{
     width: 100%;
-    height: 20%;
+    height: wrap;
     color: black;
     background-color: #FDD161;
 }
@@ -118,7 +132,7 @@ html, body{background-color: #343539;}
 #transportStats{grid-area: "clothingStats";}
 #transportStats p{
     width: 100%;
-    height: 20%;
+    height: wrap;
     color: white;
     background-color: #33447D;
 }

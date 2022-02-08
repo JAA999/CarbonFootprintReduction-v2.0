@@ -1,6 +1,6 @@
 /*Sidebar and Background Color Adjustments*/
 
-html, body{background-color: #33447D; height:100%;}
+html, body{background-color: #85a8e7;}
 
 #sidebarExpander{color: white; background-color: transparent;}
 
@@ -12,39 +12,39 @@ html, body{background-color: #33447D; height:100%;}
 
 #sidebarCollapser{color: white;}
 
-.parallax{
-    background-image: "url(assets/images/nightMountains.jpg)";
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hotAirBallon{
-    height: 100%;
-    width: 33%;
-    background-color: #4f5353;
-    position:relative;
-    margin: 0 540px;
-}
-
 #overviewTitle{
-    position: relative;
-    top: 20%;
+    color: black;
+    position: fixed;
+    float: left;
+    left: 43%;
+    z-index: 2;
+    font-family: Lato;
+    margin-top: 200px;
+    font-size: 4rem;
     text-align: center;
-    color: white;
-    font-size: 3rem;
 }
 
-#footer{
-    top: 10%;
-    position: relative;
-    text-align: center;
-    background-color: #544F4F;
-    margin: 0 auto;
-    color: white;
-    font-family: Lato;
-    padding: 40px;
-    transition: .5s; 
+p{position: absolute; height: wrap; color: black; font-size: 1.1rem;}
+
+#cloud1{top: 21%; left: 100px; width: 200px;}
+#cloud2{top: 22%; left: 85%; width: 200px;}
+#cloud3{top: 59%; left: 15%; width: 300px;}
+#cloud4{top: 110%; left: 10%; width: 300px;}
+#cloud5{top: 110%; left: 75%; width: 300px;}
+#cloud6{top: 180%; left: 8%; width: 300px;}
+#cloud7{top: 173%; left: 75%; width: 200px;}
+#cloud8{top: 200%; left: 85%; width: 200px;}
+#cloud9{top: 230%; left: 10%; width: 300px;}
+#cloud10{top: 240%; left: 70%; width: 400px;}
+#cloud11{top: 290%; left: 70%; width: 400px;}
+#cloud12{top: 340%; left: 10%; width: 300px;}
+
+#balloon{
+    position: fixed;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+#dots{
+    margin-left: 80px;
 }

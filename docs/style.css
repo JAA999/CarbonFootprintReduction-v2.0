@@ -97,6 +97,10 @@ html, body{
     #slidesContainer{top: 13%;}
 
     #contentTitle{font-size: 7rem;}
+
     #missionStatement{font-size: 2rem; width:700px; height: 300px;}
 
+    #overviewTitle{
+        left: 41%;
+    }
 }

@@ -1,6 +1,6 @@
 /*Sidebar and Background Color Adjustments*/
 
-html, body{background-color: #FDD161;}
+html, body{background-color: transparent; height: 100%;}
 
 #sidebarExpander{color: white; background-color: transparent;}
 
@@ -12,3 +12,65 @@ html, body{background-color: #FDD161;}
 
 #sidebarCollapser{color: white;}
 
+.parallax{
+    background-image: url(assets/images/ocean.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2{
+    background-image: url(assets/images/rose.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3{
+    background-image: url(assets/images/elPaso.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tipsTitle{
+    color: white;
+    position: relative;
+    float: left;
+    left: 38%;
+    background-color: #4f5353;
+    padding: 10px 20px;
+    top: 250px;
+    font-size: 5rem;
+}
+
+.information{
+    height: 50%;
+    width: 91.7%;
+    padding: 10px 20px;
+    margin-left: 80px;
+    background-color: #4f5353;
+    position:relative;
+}
+
+.title{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.content{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+#community{
+    height: 60%;
+}

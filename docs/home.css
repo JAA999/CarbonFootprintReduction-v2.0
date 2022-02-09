@@ -164,6 +164,8 @@ i{
     top: 10%;
     position: relative;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
     background-color: #544F4F;
     margin: 0 auto;
     color: white;

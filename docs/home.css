@@ -12,6 +12,8 @@ html, body{background-color: #FAF9F0;}
 
 #sidebarCollapser{color: white;}
 
+/*Creates the Moon to Sun animation*/
+
 i{
     position: absolute;
     top: 300px;
@@ -42,12 +44,16 @@ i{
     }
 }
 
+/*Formats the content for right-shift on sidebar expansion*/
+
 #main,
 #content,
 #footer{
     transition: margin-left 1s;
     padding: 20px;
 }
+
+/*Formatting for title and its container*/
 
 .titleBox{
     height: 100%;
@@ -76,6 +82,8 @@ i{
     top: 50%;
     margin: 0 50%;
 }
+
+/*Formatting for content*/
 
 #content{
     height: 100%;
@@ -115,10 +123,14 @@ i{
     transition: .5s;
 }
 
+/*Expands mission statement border when hovered above*/
+
 #missionStatement:hover{
     border: 20px solid #FDD161;
     transition: .5s;
 }
+
+/*Formatting for the slides on the right of the home page*/
 
 #slidesContainer{
     position: relative;
@@ -138,25 +150,15 @@ i{
     transition: ease-in;
 }
 
-#slideTop{
-    opacity: 50%;
-    
-}
+#slideTop{opacity: 50%;}
 
-#slideCenter{
-    
-}
-
-#slideBottom{
-    opacity: 40%;
-    
-}
+#slideBottom{opacity: 40%;}
 
 #slideTop,
 #slideCenter,
-#slideBottom{
-    background-size: contain;
-}
+#slideBottom{background-size: contain;}
+
+/*Formatting for the footer*/
 
 #footer{
     top: 10%;

@@ -12,6 +12,8 @@ html, body{background-color: transparent; height: 100%;}
 
 #sidebarCollapser{color: white;}
 
+/*Sets the ocean as the first background image*/
+
 .parallax{
     background-image: url(assets/images/ocean.jpg);
     height: 100%;
@@ -20,6 +22,8 @@ html, body{background-color: transparent; height: 100%;}
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*Sets the rose as the second background image*/
 
 .parallax2{
     background-image: url(assets/images/rose.jpg);
@@ -30,6 +34,8 @@ html, body{background-color: transparent; height: 100%;}
     background-size: cover;
 }
 
+/*Sets El Paso as the third background image*/
+
 .parallax3{
     background-image: url(assets/images/elPaso.jpg);
     height: 100%;
@@ -38,6 +44,8 @@ html, body{background-color: transparent; height: 100%;}
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*Formats the tips and tricks title in the center of the first background*/
 
 #tipsTitle{
     font-family: 'Oswald', sans-serif;
@@ -51,6 +59,8 @@ html, body{background-color: transparent; height: 100%;}
     font-size: 5rem;
 }
 
+/*Formats the container for each Tips and Tricks Section*/
+
 .information{
     height: 50%;
     width: 91.7%;
@@ -60,6 +70,8 @@ html, body{background-color: transparent; height: 100%;}
     position:relative;
 }
 
+/*Formats the title for each Tips and Tricks section*/
+
 .title{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -67,6 +79,8 @@ html, body{background-color: transparent; height: 100%;}
     color: white;
     text-align: center;
 }
+
+/*Formats the content for each section*/
 
 .content{
     font-family: 'Lato', sans-serif;
@@ -76,6 +90,6 @@ html, body{background-color: transparent; height: 100%;}
     text-align: center;
 }
 
-#community{
-    height: 60%;
-}
+/*Applies a larger height to the Community section*/
+
+#community{height: 60%;}

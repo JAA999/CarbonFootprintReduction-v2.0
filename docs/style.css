@@ -6,6 +6,8 @@ html, body{
     scroll-behavior: smooth;
 }
 
+/*Formats the sidebar for all pages*/
+
 .sidebar{
     float: left;
     position: fixed;
@@ -23,6 +25,8 @@ html, body{
     transition: 1s;
 }
 
+/*Positions sidebar icons next to their corresponding links*/
+
 .house{top: 31%;}
 
 .bulb{top: 62%;}
@@ -30,6 +34,8 @@ html, body{
 .world{top: 38.5%;}
 
 .graph{top: 55%;}
+
+/*Places the sidebar expander and collapser in the same position*/
 
 #sidebarExpander,
 #sidebarCollapser{
@@ -44,9 +50,13 @@ html, body{
     transition-delay: 1s;
 }
 
+/*Sets transition duration for expander and collapser to prevent overlapping*/
+
 #sidebarExpander{transition: 1s;}
 
 #sidebarCollapser{visibility: hidden; transition: 0.3s;}
+
+/*Creates the shape of the sidebar and formats the links*/
 
 #sidebar{
     height: 100%;
@@ -59,9 +69,9 @@ html, body{
     transition: 1s;
 }
 
-#overviewLink{
-    margin-bottom: 75px;
-}
+/*Gives a larger margin to overviewLink to provide space for sidebar collapser and expander icons*/
+
+#overviewLink{margin-bottom: 75px;}
 
 #sidebar a{
     position: relative;
@@ -77,28 +87,38 @@ html, body{
     transition: .3s;
 }
 
-/* Media Query for Mobile Devices - Not Working*/
+/* Media Query for monitors (1920x1080)*/
 
 @media screen and (min-width: 1920px) {
     
+    /*Fixes spacing between sidebar icons*/
+
     .world{top: 37%;}
 
-    .graph{top: 50%;}
+    .graph{top: 50.5%;}
 
-    .bulb{top: 55.5%;}
+    .bulb{top: 56.5%;}
 
     #sidebarExpander,
     #sidebarCollapser{top: 43%;}
 
-    #statisticsContent p{
-        font-size: 1.2rem;
-    }
-
-    #slidesContainer{top: 13%;}
+    /*Increases font size for the statistics content and title*/
 
     #contentTitle{font-size: 7rem;}
 
-    #overviewTitle{position: fixed; float: left; left: 10%;}
+    #statisticsContent p{font-size: 1.2rem;}
+
+    #missionStatement{font-size: 2rem; width:700px; height: 300px;}
+
+    /*Centers the slides*/
+
+    #slidesContainer{top: 13%;}
+
+    /*Fixes positioning of text above hot air ballon and clouds*/
+
+    #clouds{width: 95.9%;}
+
+    #overviewTitle{position: fixed; float: left; left: 35%; top: 5%;}
     #cloud1{top: 25%;}
     #cloud3{top: 65%;}
     #cloud4{top: 125%}
@@ -111,26 +131,11 @@ html, body{
     #cloud11{top: 300%;}
     #cloud12{top: 350%;}
 
-    #missionStatement{font-size: 2rem; width:700px; height: 300px;}
+    /*Fixes positioning and increases size for Tips and Tricks page*/
 
-    #overviewTitle{
-        left: 35%;
-        top: 5%;
-    }
+    .information{width: 93.75%;}
 
-    .information{
-        width: 93.75%;
-    }
+    #tipsTitle{top: 350px;}
 
-    #tipsTitle{
-        top: 350px;
-    }
-
-    #clouds{
-        width: 95.9%;
-    }
-
-    .content{
-        font-size: 1.8rem;
-    }
+    .content{font-size: 1.8rem;}
 }

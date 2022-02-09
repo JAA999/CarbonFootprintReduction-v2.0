@@ -12,6 +12,8 @@ html, body{background-color: #85a8e7;}
 
 #sidebarCollapser{color: white;}
 
+/*Places overview title above hot air ballon*/
+
 #overviewTitle{
     position: fixed;
     float: left;
@@ -20,7 +22,11 @@ html, body{background-color: #85a8e7;}
     margin-top: 60px;
 }
 
+/*Design formatting for text content*/
+
 p{position: absolute; height: wrap; color: white; font-size: 1.1rem; font-family: 'Lato', sans-serif; font-weight: 100;}
+
+/*Positions text over the corresponding cloud*/
 
 #cloud1{top: 21%; left: 100px; width: 200px;}
 #cloud2{top: 22%; left: 85%; width: 200px;}
@@ -35,12 +41,13 @@ p{position: absolute; height: wrap; color: white; font-size: 1.1rem; font-family
 #cloud11{top: 290%; left: 70%; width: 400px;}
 #cloud12{top: 340%; left: 10%; width: 300px;}
 
+/*Fixes hot air ballon to the center of the page*/
 #balloon{
     position: fixed;
     margin-left: 35%;
     margin-top: 5%;
 }
 
-#clouds{
-    margin-left: 80px;
-}
+/*Shifts the "clouds" image to the left accounting for the sidebar*/
+
+#clouds{margin-left: 80px;}

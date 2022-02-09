@@ -98,9 +98,39 @@ html, body{
 
     #contentTitle{font-size: 7rem;}
 
+    #overviewTitle{position: fixed; float: left; left: 10%;}
+    #cloud1{top: 25%;}
+    #cloud3{top: 65%;}
+    #cloud4{top: 125%}
+    #cloud5{top: 120%;}
+    #cloud6{top: 180%;}
+    #cloud7{top: 180%;}
+    #cloud8{top: 205%;}
+    #cloud9{top: 240%;}
+    #cloud10{top: 250%;}
+    #cloud11{top: 300%;}
+    #cloud12{top: 350%;}
+
     #missionStatement{font-size: 2rem; width:700px; height: 300px;}
 
     #overviewTitle{
-        left: 41%;
+        left: 35%;
+        top: 5%;
+    }
+
+    .information{
+        width: 93.75%;
+    }
+
+    #tipsTitle{
+        top: 350px;
+    }
+
+    #clouds{
+        width: 95.9%;
+    }
+
+    .content{
+        font-size: 1.8rem;
     }
 }

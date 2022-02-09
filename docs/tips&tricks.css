@@ -12,15 +12,30 @@ html, body{background-color: transparent; height: 100%;}
 
 #sidebarCollapser{color: white;}
 
+/*Sidebar icon alignment for Google Chrome*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+    .bulb{left: 0%;}
+    .graph{left: 0%;}
+    .world{left: 0%;}
+    .house{left: 0%;}
+    #logo{left: 0%;}
+    #sidebarExpander,
+    #sidebarCollapser{left: 0%;}
+    selector{ property:value;}
+}
+
 /*Sets the ocean as the first background image*/
 
 .parallax{
     background-image: url(assets/images/ocean.jpg);
     height: 100%;
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 80px;
 }
 
 /*Sets the rose as the second background image*/
